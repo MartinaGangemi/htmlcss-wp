@@ -53,7 +53,7 @@ a{
 }
 
 
-/*img*/
+/*img logo hero*/
 
 .overflow{
     background-color: rgba(0, 0, 0, 0.281);
@@ -90,7 +90,7 @@ a{
 
 
 /*container*/
-h1,h4{
+h1,h4, footer>section{
     color: black;
 }
 
@@ -110,10 +110,9 @@ h1,h4{
 }
 
 .img_cb, .img_sb{
-   
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 section{
@@ -132,8 +131,14 @@ section{
     float: left;
 }
 
+/*footer*/
 footer{
-    background-color: var(--footer);
-    height: 100px;
-    margin-top: 1rem;
+    text-align: center;
+    margin-top: 2rem;   
+}
+
+span{
+    color: red;
+    font-size: 2rem;
+    vertical-align: sub;   
 }
