@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    color: var(--secondary-color)
 }
 
 :root{
@@ -49,7 +50,6 @@ ul li{
 
 a{
     text-decoration: none;
-    color: var(--secondary-color);
 }
 
 
@@ -73,37 +73,51 @@ a{
     background-color: rgba(0, 0, 0, 0.205);
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    z-index: 12;
+    bottom: 0;
+    left: 0;
 }
 
 .Banner_text{
     margin: 3rem;
     width: 50%;
-    color: var(--main-color);
     position: absolute;
     bottom: 1rem;
 }
 
-/*container*/
+.Banner_text>p, h2{
+    color: var(--main-color);
+}
 
-.container{
-    background-color: var(--container);
-    height: 530px;
+
+/*container*/
+h1,h4{
+    color: black;
 }
 
 .title{
-    background-color: var(--title);
-    height: 100px;
+    margin: 2rem 0 2rem;
 }
+
 
 .sidebar{
     width: 25%;
-    background-color: var(--sidebar);
-    height: 500px;
     float: left;
-
 }
 
+.img_sb{
+    width: 250px;
+}
+
+.box_image_sb{
+    position: relative;
+    z-index: 0;
+}
+
+section{
+    margin-top: 1rem;
+}
 .central_bar{
     width: 47%;
     background-color: var(--central-bar);
